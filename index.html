@@ -1,0 +1,35 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css" />	
+</head>
+<body>
+	<h1>Conway's Game of Life</h1>
+	<div id="board"></div>
+	
+	<div id="stats">
+		<span><strong>generations: </strong><span id="generations" class="stat">0</span></span>
+		<span><strong>cells alive: </strong><span id="cells-alive" class="stat">0</span></span>
+	</div>
+	
+	<div id="navigation">
+		<a href="javascript:" id="start" class="control control-start">Start</a>
+		<a href="javascript:" id="stop" class="control control-stop" style="display:none">Stop</a>
+		<a href="javascript:" id="step" class="control control-default">Step</a>
+		<a href="javascript:" id="clear" class="control control-default">Clear</a>
+		<a href="javascript:" id="random" class="control control-default">Random</a>
+	</div>
+	
+	<script type="text/template" id="cell_template">
+		<span class="cell" id="{{coordinates}}" style="top:{{y_coord}}px; left:{{x_coord}}px; height:{{cell_height}}px; width:{{cell_width}}px;"></span>
+	</script>
+	
+	<script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="js/lib/mustache.js"></script>
+	<script type="text/javascript" src="js/App.js"></script>
+	
+	<script type="text/javascript">
+		App.initialize();
+	</script>
+
+</body>
+</html>

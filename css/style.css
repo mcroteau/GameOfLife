@@ -1,0 +1,127 @@
+body{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	font-family:arial;
+	background:#efefef;
+}
+#board{
+	margin:10px auto;
+	position:relative;
+	background:#fff;
+	border:solid 1px #ccc;
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(204,204,204,1);
+	-moz-box-shadow: 0px 0px 25px 0px rgba(204,204,204,1);
+	box-shadow: 0px 0px 25px 0px rgba(204,204,204,1);
+}
+h1{
+	color:#333;
+	margin:20px auto 0px auto;
+}
+.cell{
+	display:block;
+	position:absolute;
+	background:#fff;
+	border-left:solid 1px #efefef;
+	border-top:solid 1px #efefef;
+}
+.cell:hover{
+	background:#ddd;
+	border-left:solid 1px #bbb;
+	border-top:solid 1px #bbb;
+}
+.alive{
+	background:#357ebd !important;
+	border-left:solid 1px #094E88;
+	border-top:solid 1px #094E88;
+}
+.control {
+  display: inline-block;
+  padding: 5px 10px 4px 10px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration:none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.control:focus,
+.control:active:focus,
+.control.active:focus {
+  outline: none;
+}
+.control:hover,
+.control:focus {
+  color: #333;
+  text-decoration: none;
+}
+.control:active,
+.control.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.control-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.control-default:hover,
+.control-default:focus,{
+  color: #333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+.control-default:active,
+.control-default{
+  background-image: none;
+}
+
+.control-start {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.control-start:hover,
+.control-start:focus,
+.control-start:active,
+.control-start{
+  color: #fff;
+  background-color: #47a447;
+  border-color: #398439;
+}
+
+
+.control-stop {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.control-stop:hover,
+.control-stop:focus,
+.control-stop:active,
+.control-stop{
+  color: #fff;
+  background-color: #d2322d;
+  border-color: #ac2925;
+}
+
+#stats{
+	margin:0px auto 10px auto;
+}
+#stats span{
+	font-size:11px;
+	color:#333;
+}
