@@ -118,10 +118,26 @@ h1{
   border-color: #ac2925;
 }
 
+
+.control-random {
+  color: #fff;
+  background-color: #1E6564;
+  border-color: #1E6564;
+}
+.control-random:hover,
+.control-random:focus,
+.control-random:active,
+.control-random{
+  color: #fff;
+  background-color: #1E6564;
+  border-color: #1E6564;
+}
+
 #stats{
 	margin:0px auto 10px auto;
 }
-#stats span{
+#stats span,
+p{
 	font-size:11px;
 	color:#333;
 }

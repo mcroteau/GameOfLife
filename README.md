@@ -1,1 +1,3 @@
-# game_of_life
+# Conway's Game of Life
+
+jQuery, Mustache, Html, Css

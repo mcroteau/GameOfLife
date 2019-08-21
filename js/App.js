@@ -222,6 +222,7 @@
 				}
 			}
 			updateCellsAliveStat();
+			$random.removeClass("control-random").addClass("control-default");
 		}
 	
 		function getAliveNeighbors(cell){
